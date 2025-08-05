@@ -1,0 +1,434 @@
+PanelWidgetClass PanelWidgetIcon {
+ visible 1
+ ignorepointer 1
+ position 0 0
+ size 1 1
+ halign right_ref
+ valign bottom_ref
+ hexactpos 1
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ style blank
+ {
+  PanelWidgetClass previewPanel {
+   ignorepointer 1
+   position 0.3446 49.5129
+   size 0.58579 0.46364
+   halign right_ref
+   hexactpos 0
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style EditorPanel
+   {
+    PanelWidgetClass previewIconChange {
+     ignorepointer 1
+     color 1 0 0 1
+     position 0.05 0.1
+     size 15 15
+     hexactpos 0
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+    }
+   }
+  }
+  PanelWidgetClass PaneWidget {
+   visible 1
+   ignorepointer 1
+   position 0 -0.00004
+   size 1 1
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   {
+    ButtonWidgetClass btnGeneralApplyIcon {
+     visible 1
+     inheritalpha 1
+     color 0.102 1 0 1
+     position 0.34504 728.96002
+     size 0.14583 35.3919
+     halign right_ref
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style Editor
+     "no focus" 1
+     text "Save"
+     font "gui/fonts/metron16"
+    }
+    SliderWidgetClass SliderIconHeight {
+     color 0.1686 0.5804 0.6157 1
+     position 0.34583 702.21301
+     size 0.579 18.3314
+     halign right_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     minimum 16
+     maximum 456
+     step 1
+     "fill in" 1
+    }
+    SliderWidgetClass SliderIconWidth {
+     color 0.1686 0.5804 0.6157 1
+     position 0.34583 648.979
+     size 0.579 18.3314
+     halign right_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     minimum 16
+     maximum 456
+     step 1
+     "fill in" 1
+    }
+    PanelWidgetClass SliderIconWidthPanel {
+     color 0 0 0 0.651
+     position 0.075 619.02704
+     size 0.5813 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass SliderIconWidthPanelTitle {
+       visible 1
+       position 0.002 0
+       size 0.94 1
+       vexactpos 0
+       vexactsize 0
+       text "#STR_IconWidthSize"
+       font "gui/fonts/metron16"
+       "exact text" 0
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass iconHeight {
+     color 0 0 0 0.651
+     position 0.075 672.26099
+     size 0.5813 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass iconHeightTitle {
+       visible 1
+       position 0.002 0
+       size 0.9899 1
+       vexactpos 0
+       vexactsize 0
+       text "#STR_IconHeightSize"
+       font "gui/fonts/metron16"
+       "exact text" 0
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass CheckShowPvPP {
+     color 0 0 0 0.651
+     position 0.075 755.69202
+     size 0.1587 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckShowPvPT {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowPvPZones"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckShowPvP {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+    PanelWidgetClass CheckShowPvEP {
+     color 0 0 0 0.651
+     position 0.075 788.69202
+     size 0.15869 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckShowPvET {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowPvEZones"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckShowPvE {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+    PanelWidgetClass CheckShowRaidP {
+     color 0 0 0 0.651
+     position 0.075 821.69202
+     size 0.15869 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckShowRaidT {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowRaidZones"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckShowRaid {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+    PanelWidgetClass CheckShowSafeZoneP {
+     color 0 0 0 0.651
+     position 0.075 854.69202
+     size 0.15869 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckShowSafeZoneT {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowSafeZones"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckShowSafeZone {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+    PanelWidgetClass CheckShowPaintballP {
+     color 0 0 0 0.651
+     position 0.23787 854.69202
+     size 0.15869 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckShowPaintballT {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowPaintBallZones"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckShowPaintball {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+    PanelWidgetClass CheckShowVisualP {
+     color 0 0 0 0.651
+     position 0.23787 756.388
+     size 0.1587 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckShowVisualT {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowVisualZones"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckShowVisual {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+    PanelWidgetClass CheckShowZoneLabelsP {
+     visible 1
+     color 0 0 0 0.651
+     position 0.23787 788.69202
+     size 0.1587 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckShowZoneLabelsT {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowZoneLabels"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckShowZoneLabels {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+    PanelWidgetClass CheckShowNoBuildRadiusP {
+     visible 1
+     color 0 0 0 0.651
+     position 0.23787 821.69202
+     size 0.1587 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckShowNoBuildRadiusT {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowNoBuildZoneRadius"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckShowNoBuildRadius {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+    SliderWidgetClass IconsliderY {
+     visible 1
+     color 0.1686 0.5804 0.6157 1
+     position 108.415 63.6644
+     size 13.7937 0.44797
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     maximum 1
+     step 0.001
+     current 0.5
+     vertical 1
+     "fill in" 1
+    }
+    SliderWidgetClass IconsliderX {
+     color 0.1686 0.5804 0.6157 1
+     position 0.34557 555.47003
+     size 0.58133 18.3316
+     halign right_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     maximum 1
+     step 0.001
+     current 0.5
+     "fill in" 1
+    }
+    PanelWidgetClass CheckDrawMiniMapZonesP {
+     color 0 0 0 0.651
+     position 0.07501 885.69202
+     size 0.15869 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckDrawMiniMapZonesT {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowLBMiniMapZones"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckDrawMiniMapZones {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+    PanelWidgetClass CheckDrawMiniMapLabelsP {
+     color 0 0 0 0.651
+     position 0.07501 916.69202
+     size 0.15869 25
+     vexactpos 1
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass CheckDrawMiniMapLabelsT {
+       position 0.01 0
+       size 0.87927 1
+       text "#STR_ShowLBMiniMapLabels"
+       font "gui/fonts/metron16"
+       "text valign" center
+      }
+      CheckBoxWidgetClass CheckDrawMiniMapLabels {
+       position 0.90102 0
+       size 0.09898 1
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass mapLegendParent {
+   ignorepointer 1
+   color 0.0196 0.0196 0.0196 0.6588
+   position 20 45
+   size 300 600
+   halign right_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 430
+   style blank
+   {
+    PanelWidgetClass mapLegend {
+     visible 1
+     ignorepointer 1
+     color 0.2706 0.2706 0.2706 0.6235
+     size 1 48
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 450
+     style rover_sim_colorable
+    }
+    PanelWidgetClass MapLegendTitlePanel {
+     visible 1
+     color 0 0 0 0.6667
+     size 1 50
+     vexactsize 1
+     style DayZDefaultPanel
+     {
+      TextWidgetClass MapLegendTitle {
+       visible 1
+       clipchildren 1
+       inheritalpha 0
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       priority 1
+       text "Test"
+       font "gui/fonts/metron28"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

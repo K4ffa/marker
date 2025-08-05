@@ -1,0 +1,70 @@
+FrameWidgetClass rootFrameNotifications {
+ visible 0
+ clipchildren 0
+ inheritalpha 0
+ ignorepointer 1
+ color 0 0 0 0
+ position -0.00178 0
+ size 1 1
+ halign right_ref
+ valign bottom_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ scaled 1
+ {
+  GridSpacerWidgetClass NotificationWidget {
+   visible 1
+   clipchildren 0
+   ignorepointer 1
+   color 0 0 0 0.7843
+   position 34.4276 147.17702
+   size 0.15 1
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   vexactsize 1
+   style DayZDefaultPanelSides
+   Padding 1
+   Margin 15
+   "Size To Content V" 1
+   content_halign center
+   content_valign center
+   Columns 1
+   Rows 2
+   {
+    RichTextWidgetClass CountdownTimer {
+     visible 1
+     clipchildren 0
+     ignorepointer 1
+     color 1 1 1 1
+     size 0.95 0.45
+     halign center
+     valign top
+     hexactpos 1
+     vexactpos 1
+     text ""
+     font "gui/fonts/sdf_MetronLight72"
+     "exact text" 1
+     "exact text size" 15
+     "size to text v" 1
+     "text halign" center
+     "text valign" center
+     wrap 1
+     "condense whitespace" 1
+     "strip newlines" 1
+    }
+    PanelWidgetClass NotificationPanel {
+     ignorepointer 1
+     color 0 0 0 0.7843
+     halign center_ref
+     valign center_ref
+     vexactpos 1
+     style DayZDefaultPanel
+    }
+   }
+  }
+ }
+}
