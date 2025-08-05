@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="true"?>
+<modded_inputs>
+    <inputs>
+        <actions>
+            <input name="UAAdminMenu" loc="Admin Menu (Admins Only)" />
+            <input name="UAItemSearchMenu" loc="Item Search Menu (Admins Only)" />
+            <input name="UAClientZoneSettingsMenu" loc="Player Settings" />
+        </actions>
+        <sorting name="NinjinsPvEPvP" loc="NinjinsPvEPvP">     
+            <input name="UAAdminMenu" />  
+            <input name="UAItemSearchMenu" />        
+            <input name="UAClientZoneSettingsMenu"/>
+        </sorting>
+    </inputs>
+    <preset>
+        <input name="UAAdminMenu">
+            <btn name="" />  
+        </input>
+        <input name="UAItemSearchMenu">
+            <btn name="" />
+        </input>
+        <input name="UAClientZoneSettingsMenu">
+            <btn name="" />
+        </input>
+    </preset>
+</modded_inputs>
